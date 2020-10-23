@@ -126,7 +126,6 @@ const App = () => {
               return (
                 <>
                   <p key={index}>{item}</p>
-                  <br></br>
                 </>
               );
             })}
