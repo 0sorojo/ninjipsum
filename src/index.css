@@ -13,6 +13,7 @@
   background-color: bisque;
   background-image: url(./images/31387.svg);
   flex-wrap: wrap;
+  position: fixed;
 }
 
 .left-body {
