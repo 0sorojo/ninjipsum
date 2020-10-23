@@ -125,7 +125,9 @@ const App = () => {
             {text.map((item, index) => {
               return (
                 <>
-                  <p key={index}>{item}</p>
+                  <p className='ninja-text' key={index}>
+                    {item}
+                  </p>
                 </>
               );
             })}
