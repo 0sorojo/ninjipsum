@@ -12,6 +12,7 @@
   display: flex;
   background-color: bisque;
   background-image: url(./images/31387.svg);
+  flex-wrap: wrap;
 }
 
 .left-body {
@@ -26,17 +27,14 @@
 .right-body {
   flex: 3 1 auto;
   display: flex;
-  justify-content: space-around;
-  align-items: center;
+  justify-content: center;
+  align-items: flex-start;
 }
 
 .header {
   font-family: 'Commissioner', sans-serif;
   font-weight: 600;
   font-size: 40px;
-  position: absolute;
-  top: 40px;
-  left: 40px;
 }
 
 .form-container {
@@ -105,9 +103,8 @@
   background-color: whitesmoke;
   border-radius: 10px;
   box-shadow: 0 5px 15px rgba(0, 0, 0, 0.2);
-  margin: 20px;
   padding: 20px;
-  height: 60%;
+  height: 15%;
   width: 80%;
   overflow: scroll;
 }
@@ -140,4 +137,25 @@
 
 .ninja-text {
   margin-bottom: 15px;
+}
+
+@media only screen and (min-width: 768px) {
+  .main-section {
+    flex-wrap: nowrap;
+  }
+
+  .right-body {
+    align-items: center;
+  }
+
+  .header {
+    position: absolute;
+    top: 40px;
+    left: 40px;
+  }
+
+  .text-container {
+    height: 60%;
+    margin: 20px;
+  }
 }
